@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Pacifico", cursive;
+}
+#navbar{
+    position: sticky;
+    padding:20px 20px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    background-color: rgba(195,195,195);
+    height:70px;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    color: aqua !important;
+    font-weight: 500;
+}
+@keyframes slide-in{
+    from{
+        transform:translateX(-100%);
+    }
+    to{
+        transform:translateX(50%);
+    }
+}
+#logo{
+    animation:slide-in 5000ms;
+    animation-iteration-count: infinite;
+
+}
+#navbarSupportedContent a{
+    padding:2px 20px;
+    color: rgb(184,91,108);
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid  rgb(72,41,47);
+}
+#navbarSupportedContent button{
+    border-radius: 15px;
+    width: 5rem;
+}
+#navbarSupportedContent button:hover{
+    background-color: pink;
+    width:100px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(man-fixing-motorcycle-modern-workshop_158595-8081.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: "Protest Revolution", sans-serif;
+  
+}
+#home p{
+    font-size: 18px;
+    color: #fff;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+
+#about{
+    background:linear-gradient(greenyellow,pink);
+    
+}
+#about img{
+    border-radius: 50%;
+    box-shadow: 10px 25px 10px rgba(0,0,0,0.5);
+   
+}
+#about img:hover{
+    border-radius: 20px;
+    transition:1s;
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color:rgb(142, 94, 94);
+}
+#about p{
+    color: black;
+}
+
+#collections h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#collections img{
+    height: 200px;
+    width: 200px;
+}
+
+   
+.card {
+    width: 100px;
+    height: 320px;
+    background: greenyellow!important;
+    border: 1px !important;
+    box-shadow: 10px 10px 4px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin: 20px 30px;
+    transition: .2s;
+}
+
+.card:hover{
+              background: greenyellow !important;
+              box-shadow:inset 10px 10px 12px rgb(163, 214, 88),
+                         inset -10px -10px 12px rgb(163, 214, 88);
+  background-color: greenyellow;
+  transition: .4s;
+}
+#contact img{
+    height: 70%;
+}
+.box{
+    width: 100% !important;
+    background:  blue;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
